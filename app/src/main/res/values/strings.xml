@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">栋栋斗图</string>
+
+    <string name="api_source_zhuangbi">* 使用的 API 来自 <b>装逼大全</b> zhuangbi.info</string>
+    <string name="dialog_elementary">非常感谢提供api的作者，以及感谢文章<a href="http://gank.io/post/560e15be2dca930e00da1083#toc_1">《给Android开发者的RxJava详解》</a>的作者-扔物线的无私奉献，以及他的开源例子！本程序，结合大神的代码，以及MVP的思想，将Retrofit,RxJava重新整理学习了一遍，本人愚钝，但还是希望对看到的人有点启发！</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

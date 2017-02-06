@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chensd.funnydemo.ui.MainFragment">
+
+    <RelativeLayout
+        android:id="@+id/activity_search_rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/activity_include_title_llyt"
+        android:background="@android:color/white"
+        >
+
+        <EditText
+            android:id="@+id/fragment_search_edt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/fragment_main_search_tv"
+            android:background="@drawable/shape_common_search_bg"
+            android:drawableLeft="@drawable/ic_common_search"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:textColor="@color/color_gray"
+            android:textSize="14sp"
+            >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/fragment_main_search_tv"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/tv_bg"
+            android:gravity="center"
+            android:text="搜索"
+            android:clickable="true"
+            android:textColor="@color/color_gray"
+            />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/mainSwipRefreshLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mainFrgRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
